@@ -97,7 +97,7 @@ const cropster = {
 
     async function get_batches(limit){
 
-        var url = "https://c-sar.cropster.com/api/v2/lots?filter%5Blots%5D%5BincludeConsumed%5D=true&filter%5Blots%5D%5BprocessingStep%5D=coffee.roasting&filter%5Blots%5D%5Bgroup%5D="+this.group+"&include%5Blots%5D%5B%5D=processing&include%5Blots%5D%5B%5D=processing.machine&include%5Blots%5D%5B%5D=processing.profile&include%5Blots%5D%5B%5D=processing.profile.processingGoals&include%5Blots%5D%5B%5D=processing.processingMeasures&include%5Blots%5D%5B%5D=processingAlerts&page%5Bsize%5D="+limit+"&page%5Bnumber%5D=0&sort%5Blots%5D%5BcreationDate%5D=desc"
+        var url = "https://c-sar.cropster.com/api/v2/lots?filter%5Blots%5D%5BincludeConsumed%5D=true&filter%5Blots%5D%5BprocessingStep%5D=coffee.roasting&filter%5Blots%5D%5Bgroup%5D="+local_group+"&include%5Blots%5D%5B%5D=processing&include%5Blots%5D%5B%5D=processing.machine&include%5Blots%5D%5B%5D=processing.profile&include%5Blots%5D%5B%5D=processing.profile.processingGoals&include%5Blots%5D%5B%5D=processing.processingMeasures&include%5Blots%5D%5B%5D=processingAlerts&page%5Bsize%5D="+limit+"&page%5Bnumber%5D=0&sort%5Blots%5D%5BcreationDate%5D=desc"
 
         try {
           var resp = await local_axios({
